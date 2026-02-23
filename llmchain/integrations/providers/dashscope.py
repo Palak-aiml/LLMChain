@@ -1,0 +1,9 @@
+"""
+DashScope LLM integration (stub).
+"""
+class DashScopeLLM:
+    def __init__(self, api_key: str):
+        self.api_key = api_key
+    def generate(self, prompt: str, **kwargs):
+        # Placeholder for DashScope API call
+        return f"[DashScope] {prompt}"
