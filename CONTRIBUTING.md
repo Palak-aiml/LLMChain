@@ -22,3 +22,7 @@
 - Be respectful and constructive.
 - Help others and share knowledge.
 - Keep the community welcoming and inclusive.
+
+## Documentation
+- Update `API_REFERENCE.md` and `docs/USAGE.md` for new features.
+- Add or update tutorials in `docs/TUTORIALS.md` as needed.
