@@ -15,3 +15,17 @@ LoggingConfig.configure()
 ```
 
 Set environment variables before running to customize logging.
+
+## Advanced Usage
+
+You can combine logging configuration with environment variable and .env file loaders for flexible setup:
+
+```python
+from llmchain_core.dotenv_loader import DotenvLoader
+from llmchain_core.logging_config import LoggingConfig
+
+DotenvLoader().load()  # Load .env variables
+LoggingConfig.configure()  # Apply logging config
+```
+
+This allows you to control logging settings from a .env file or environment variables.
