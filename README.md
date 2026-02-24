@@ -1,3 +1,35 @@
+## 🔄 Chain Execution Flow
+
+```mermaid
+flowchart TD
+   UserInput --> Chain
+   Chain --> AgentOrchestrator
+   AgentOrchestrator --> SubAgent
+   Chain --> Memory
+   Chain --> Retriever
+   Retriever --> VectorStore
+   Chain --> LLMProviders
+   LLMProviders --> Embedding
+   Chain --> PromptManager
+   Chain --> Monitoring
+   Monitoring --> Logger
+   Monitoring --> Evaluator
+   Chain --> ExperimentTracker
+   Chain --> Debugger
+   Chain --> UI
+   UI --> Dashboard
+   Chain --> PluginManager
+   PluginManager --> Plugin
+   Chain --> FastAPI
+   Chain --> CLI
+   Chain --> Documentation
+   Chain --> Security
+   Chain --> Scaling
+   Chain --> DistributedTracing
+   Chain --> EnvConfig
+   Chain --> DotenvLoader
+   Chain --> Output
+```
 
 # LLMChain: Professional Modular AI Framework
 
