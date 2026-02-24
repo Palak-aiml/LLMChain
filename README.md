@@ -1,34 +1,37 @@
-## 🔄 Chain Execution Flow
+## 🧬 Feature Overview
 
 ```mermaid
-flowchart TD
-   UserInput --> Chain
-   Chain --> AgentOrchestrator
-   AgentOrchestrator --> SubAgent
-   Chain --> Memory
-   Chain --> Retriever
-   Retriever --> VectorStore
-   Chain --> LLMProviders
-   LLMProviders --> Embedding
-   Chain --> PromptManager
-   Chain --> Monitoring
-   Monitoring --> Logger
-   Monitoring --> Evaluator
-   Chain --> ExperimentTracker
-   Chain --> Debugger
-   Chain --> UI
-   UI --> Dashboard
-   Chain --> PluginManager
-   PluginManager --> Plugin
-   Chain --> FastAPI
-   Chain --> CLI
-   Chain --> Documentation
-   Chain --> Security
-   Chain --> Scaling
-   Chain --> DistributedTracing
-   Chain --> EnvConfig
-   Chain --> DotenvLoader
-   Chain --> Output
+graph LR
+   LLMChain --> ModularChains
+   LLMChain --> AgentOrchestration
+   LLMChain --> LLMProviders
+   LLMChain --> Embeddings
+   LLMChain --> VectorStores
+   LLMChain --> Retrievers
+   LLMChain --> Memory
+   LLMChain --> PromptEngineering
+   LLMChain --> Monitoring
+   LLMChain --> ExperimentTracking
+   LLMChain --> EnterpriseFeatures
+   LLMChain --> UI
+   LLMChain --> Plugins
+   LLMChain --> Deployment
+   LLMChain --> Documentation
+   ModularChains[Modular Chains]
+   AgentOrchestration[Agent Orchestration]
+   LLMProviders[AI LLM Providers]
+   Embeddings[Embeddings]
+   VectorStores[Vector Stores]
+   Retrievers[Retrievers]
+   Memory[Memory]
+   PromptEngineering[Prompt Engineering]
+   Monitoring[Monitoring & Evaluation]
+   ExperimentTracking[Experiment Tracking]
+   EnterpriseFeatures[Enterprise Features]
+   UI[UI Tools]
+   Plugins[Plugin System]
+   Deployment[Production Deployment]
+   Documentation[Documentation & Tutorials]
 ```
 
 # LLMChain: Professional Modular AI Framework
