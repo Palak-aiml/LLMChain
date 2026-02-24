@@ -4,7 +4,7 @@
 graph TD
    LLMChain --> Chains
    LLMChain --> Agents
-   LLMChain --> LLMProviders
+   LLMChain --> Providers
    LLMChain --> Memory
    LLMChain --> Retrieval
    LLMChain --> Monitoring
@@ -13,12 +13,12 @@ graph TD
    LLMChain --> Deploy
    Chains --> Workflows
    Agents --> Orchestration
-   LLMProviders --> "AI Providers"
-   Retrieval --> "Retrievers & VectorStores"
-   Monitoring --> "Monitoring & Tracking"
-   UI --> "Visual UI"
-   Plugins --> "Plugin System"
-   Deploy --> "API/CLI"
+   Providers --> AIProviders
+   Retrieval --> RetrieverStore
+   Monitoring --> Tracking
+   UI --> VisualUI
+   Plugins --> PluginSystem
+   Deploy --> APICLI
 ```
 
 # LLMChain: Professional Modular AI Framework
