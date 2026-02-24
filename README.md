@@ -1,37 +1,26 @@
-## 🧬 Feature Overview
+## 🧬 Feature Overview (Compact)
 
 ```mermaid
-graph LR
-   LLMChain --> ModularChains
-   LLMChain --> AgentOrchestration
-   LLMChain --> LLMProviders
-   LLMChain --> Embeddings
-   LLMChain --> VectorStores
-   LLMChain --> Retrievers
+graph TD
+   LLMChain((LLMChain))
+   LLMChain --> Chains
+   LLMChain --> Agents
+   LLMChain --> LLMs
    LLMChain --> Memory
-   LLMChain --> PromptEngineering
+   LLMChain --> Retrieval
    LLMChain --> Monitoring
-   LLMChain --> ExperimentTracking
-   LLMChain --> EnterpriseFeatures
    LLMChain --> UI
    LLMChain --> Plugins
-   LLMChain --> Deployment
-   LLMChain --> Documentation
-   ModularChains[Modular Chains]
-   AgentOrchestration[Agent Orchestration]
-   LLMProviders[AI LLM Providers]
-   Embeddings[Embeddings]
-   VectorStores[Vector Stores]
-   Retrievers[Retrievers]
+   LLMChain --> Deploy
+   Chains[Chains & Workflows]
+   Agents[Agents]
+   LLMs[AI Providers]
    Memory[Memory]
-   PromptEngineering[Prompt Engineering]
-   Monitoring[Monitoring & Evaluation]
-   ExperimentTracking[Experiment Tracking]
-   EnterpriseFeatures[Enterprise Features]
-   UI[UI Tools]
-   Plugins[Plugin System]
-   Deployment[Production Deployment]
-   Documentation[Documentation & Tutorials]
+   Retrieval[Retrievers & Vector Stores]
+   Monitoring[Monitoring & Tracking]
+   UI[Visual UI]
+   Plugins[Plugins]
+   Deploy[Deploy (API/CLI)]
 ```
 
 # LLMChain: Professional Modular AI Framework
