@@ -2,25 +2,23 @@
 
 ```mermaid
 graph TD
-   LLMChain((LLMChain))
    LLMChain --> Chains
    LLMChain --> Agents
-   LLMChain --> LLMs
+   LLMChain --> LLMProviders
    LLMChain --> Memory
    LLMChain --> Retrieval
    LLMChain --> Monitoring
    LLMChain --> UI
    LLMChain --> Plugins
    LLMChain --> Deploy
-   Chains[Chains & Workflows]
-   Agents[Agents]
-   LLMs[AI Providers]
-   Memory[Memory]
-   Retrieval[Retrievers & Vector Stores]
-   Monitoring[Monitoring & Tracking]
-   UI[Visual UI]
-   Plugins[Plugins]
-   Deploy[Deploy (API/CLI)]
+   Chains --> Workflows
+   Agents --> Orchestration
+   LLMProviders --> "AI Providers"
+   Retrieval --> "Retrievers & VectorStores"
+   Monitoring --> "Monitoring & Tracking"
+   UI --> "Visual UI"
+   Plugins --> "Plugin System"
+   Deploy --> "API/CLI"
 ```
 
 # LLMChain: Professional Modular AI Framework
