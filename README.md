@@ -57,62 +57,14 @@ graph TD
 
 ---
 
+
 ## 🤖 AI LLM Providers & Workflow
 
 ```mermaid
 flowchart LR
-    subgraph AI LLM Providers
-        OpenAI
-        Anthropic
-        Google
-        Cohere
-        HuggingFace
-        DeepSeek
-        Groq
-        Ollama
-        Mistral
-        Azure
-        VertexAI
-        Replicate
-        Fireworks
-        Together
-        Perplexity
-        MosaicML
-        PaLM
-        Bedrock
-        SageMaker
-        Clarifai
-        Petals
-        AlephAlpha
-        Forefront
-        Writer
-        Yandex
-        Baidu
-        Qianfan
-        Zhipu
-        Baichuan
-        ERNIE
-        Spark
-        DashScope
-        Moonshot
-        Zero
-        Qwen
-        Yi
-        MiniMax
-        DeepInfra
-        BaiduCloud
-        SparkDesk
-        BaiduWenxin
-        ErnieBot
-        Baichuan2
-        Qwen2
-        Yi1
-        Yi34
-        MiniChain
-        Moon
-    end
     UserInput --> Chain
-    Chain --> AI LLM Providers
+    Chain --> LLMProviders
+    LLMProviders[AI LLM Providers: OpenAI, Anthropic, Google, Cohere, HuggingFace, etc.]
     Chain --> VectorStore
     Chain --> Retriever
     Chain --> Memory
